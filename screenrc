@@ -1,0 +1,8 @@
+source $HOME/.screen/common
+source $HOME/.screen/keybindings
+source $HOME/.screen/logging
+source $HOME/.screen/xterm
+source $HOME/.screen/256color
+source $HOME/.screen/lockscreen
+
+screen 1 bash

@@ -1,0 +1,3 @@
+# auto-log
+logfile $HOME/logs/screen/%Y%m%d-%n.log
+deflog on

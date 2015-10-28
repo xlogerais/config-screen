@@ -1,0 +1,41 @@
+#
+# see http://aperiodic.net/screen/ for some doc
+#
+startup_message off
+
+autodetach on
+
+vbell off
+defscrollback 10000
+#defencoding UTF-8
+
+#Fix for residual editor text 
+altscreen on
+
+shelltitle "$ |bash"
+
+activity        "activity in %n (%t)^G"
+bell_msg        "/!\\ bell in %n (%t) /!\\"
+sorendition "+b kr"
+
+hardstatus off
+hardstatus string "screen running on %H (%t)"
+#hardstatus alwayslastline "%{= KW}%-w%{= wk}%50>%n %t%{-}%+w%<"
+#hardstatus always "%{= KW}%-w%{= wk}%50>%n %t%{-}%+w%<"
+
+#defhstatus "screen ^E (^Et) | $USER@^EH"
+
+#caption always "%?%F%{= gk}%:%{= wk}%? %n %?%F%{= wk}%? %C%A %{= wk} %t%= "
+caption always "%{= kw}Screen on %H | %{= kG}%-w%{+b GK}%50>%n %t%{-}%+w%<"
+
+#termcapinfo xterm*|rxvt*|kterm*|Eterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+termcapinfo xterm 'hs:ts=\033]0;:fs=\007:ds=\033]0;\007'
+
+# The vt100 description does not mention “dl”. *sigh*
+termcapinfo vt100 dl=5\E[M
+
+
+# Window numbering starts at 1, not 0.
+bind c screen 1
+bind " " screen 1 # open new tab with C-a space
+bind 0 select 10

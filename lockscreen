@@ -1,0 +1,3 @@
+idle 3600 lockscreen
+#idle 300 eval "screen cmatrix -f -o -u 10" "idle 0"
+
