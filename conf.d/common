@@ -1,5 +1,6 @@
 #
-# see http://aperiodic.net/screen/ for some doc
+# See https://www.gnu.org/software/screen/manual/screen.html for official documentation.
+# See http://aperiodic.net/screen/ for extra documentation.
 #
 startup_message off
 
