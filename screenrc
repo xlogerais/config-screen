@@ -1,8 +1,8 @@
-source conf.d/common
-source conf.d/keybindings
-source conf.d/logging
-source conf.d/xterm
-source conf.d/256color
-source conf.d/lockscreen
+source ${HOME}/.config/screen/conf.d/common
+source ${HOME}/.config/screen/conf.d/keybindings
+source ${HOME}/.config/screen/conf.d/logging
+source ${HOME}/.config/screen/conf.d/xterm
+source ${HOME}/.config/screen/conf.d/256color
+source ${HOME}/.config/screen/conf.d/lockscreen
 
 screen 1 bash
